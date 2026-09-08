@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Website</title>
+    <link rel="stylesheet" href="FrontEnd.css" />
+    <link rel="stylesheet" href="countDowntime.css" />
+    <link rel="stylesheet" href="intf.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#courses" id="courses-button">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact" id="contact-button">Contact</a></li>
+          <li>
+            <a href="#interactive-features" id="interactive-features-button"
+              >MyModules</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1>Welcome to Belgium Campus Course Website</h1>
+        <p>Your gateway to comprehensive course information and enrollment.</p>
+      </section>
+
+      <section id="courses">
+        <h2>Our Courses</h2>
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Search for courses..."
+        />
+        <button id="search-button">Search</button>
+        <div id="course-list">
+          <!-- Dynamically generated course list will appear here -->
+        </div>
+        <!-- Countdown Timers -->
+        <div id="countdown-timers">
+          <h3>Countdown to Course Start Dates</h3>
+          <p id="higherCertificate">Loading...</p>
+          <p id="diploma">Loading...</p>
+          <p id="bit">Loading...</p>
+          <p id="bcom">Loading...</p>
+        </div>
+      </section>
+
+      <section id="course-details" class="hidden">
+        <h2>Course Details</h2>
+        <div id="course-content">
+          <!-- Dynamically generated course details will appear here -->
+        </div>
+        <button id="print-course">Print Course</button>
+        <button id="enroll-course">Enroll</button>
+      </section>
+
+      <section id="success-message" class="hidden">
+        <p>Enrollment Successful! Redirecting to home...</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@belgiumcampus.ac.za</p>
+        <p>Phone: +27 12 123 4567</p>
+        <p>Address: 123 Main Street, Pretoria, South Africa</p>
+      </section>
+
+      <section id="interactive-features">
+        <h2>Modules</h2>
+        <div>
+          <h2>Bachelor of Computing</h2>
+          <p>Code: 181</p>
+          <p>Duration: 4 years</p>
+
+          <h3>1st Year Modules</h3>
+          <ul class="moduleList">
+            <li class="module">MAT181</li>
+            <li class="module">STA181</li>
+            <li class="module">PRG181</li>
+            <li class="module">LPR181</li>
+            <li class="module">COA181</li>
+            <li class="module">PRG182</li>
+            <li class="module">DBD181</li>
+            <li class="module">WPR181</li>
+            <li class="module">ACW181</li>
+            <li class="module">NWD181</li>
+            <li class="module">INF181</li>
+            <li class="module">INL101</li>
+            <li class="module">INL102</li>
+            <li class="module">Electives: ENT181/BUM181</li>
+          </ul>
+
+          <h3>2nd Year Modules</h3>
+          <ul class="moduleList">
+            <li class="module">PMM281</li>
+            <li class="module">DBD281</li>
+            <li class="module">LPR281</li>
+            <li class="module">STA281</li>
+            <li class="module">MAT281</li>
+            <li class="module">WPR281</li>
+            <li class="module">PRG281</li>
+            <li class="module">INF281</li>
+            <li class="module">PRG282</li>
+            <li class="module">INL201</li>
+            <li class="module">INL202</li>
+            <li class="module">Electives: SAD281/DWH281, IOT281/SWT281</li>
+          </ul>
+
+          <h3>3rd Year Modules</h3>
+          <ul class="moduleList">
+            <li class="module">RSH381</li>
+            <li class="module">DBD381</li>
+            <li class="module">LPR381</li>
+            <li class="module">INL321</li>
+            <li class="module">MLG381</li>
+            <li class="module">PRJ381</li>
+            <li class="module">PMM381</li>
+            <li class="module">PRG381</li>
+            <li class="module">SEN381</li>
+            <li class="module">WPR381</li>
+            <li class="module">BIN381</li>
+            <li class="module">DBA381</li>
+            <li class="module">STA381</li>
+            <li class="module">INM381</li>
+            <li class="module">MLG382</li>
+            <li class="module">UAX381</li>
+          </ul>
+
+          <h3>4th Year Modules</h3>
+          <ul class="moduleList">
+            <li class="module">AIT481</li>
+            <li class="module">AIT482</li>
+            <li class="module">DST481</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Bachelor of Information Technology</h2>
+          <p>Code: 171</p>
+          <p>Duration: 4 years</p>
+
+          <h3>1st Year Modules</h3>
+          <ul class="moduleList">
+            <li class="module">MAT171</li>
+            <li class="module">STA171</li>
+            <li class="module">PRG171</li>
+            <li class="module">COA171</li>
+            <li class="module">ENG171</li>
+            <li class="module">PRG172</li>
+            <li class="module">DBD171</li>
+            <li class="module">WPR171</li>
+            <li class="module">ENT171/BUM171</li>
+            <li class="module">ACW171</li>
+            <li class="module">NWD171</li>
+            <li class="module">INF171</li>
+            <li class="module">INL101</li>
+            <li class="module">INL102</li>
+          </ul>
+
+          <h3>2nd Year Modules</h3>
+          <ul class="moduleList">
+            <li class="module">CNA271</li>
+            <li class="module">DBD271</li>
+            <li class="module">ERP271</li>
+            <li class="module">ETH271</li>
+            <li class="module">INF271</li>
+            <li class="module">INL201</li>
+            <li class="module">INL202</li>
+            <li class="module">LPR171</li>
+            <li class="module">PRG271</li>
+            <li class="module">PRG272</li>
+            <li class="module">PMM271</li>
+            <li class="module">STA271</li>
+            <li class="module">WPR271</li>
+            <li class="module">IOT271/SWT271</li>
+          </ul>
+
+          <h3>3rd Year Modules</h3>
+          <ul class="moduleList">
+            <li class="module">BIN371</li>
+            <li class="module">CNA371</li>
+            <li class="module">DAL371</li>
+            <li class="module">DBD371</li>
+            <li class="module">INL371</li>
+            <li class="module">PRG371</li>
+            <li class="module">PRJ371</li>
+            <li class="module">PMM371</li>
+            <li class="module">SAD371</li>
+            <li class="module">SEN371</li>
+            <li class="module">WPR371</li>
+            <li class="module">INM371</li>
+            <li class="module">UAX371</li>
+          </ul>
+
+          <h3>4th Year Modules</h3>
+          <ul class="moduleList">
+            <li class="module">N/A</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Diploma in Information Technology</h2>
+          <p>Code: 161</p>
+          <p>Duration: 3 years</p>
+
+          <h3>1st Year Modules</h3>
+          <ul class="moduleList">
+            <li class="module">BUC161</li>
+            <li class="module">BME161</li>
+            <li class="module">COA161</li>
+            <li class="module">DBC161</li>
+            <li class="module">DBF161</li>
+            <li class="module">EUC161</li>
+            <li class="module">INL161</li>
+            <li class="module">IOT161</li>
+            <li class="module">MAT161</li>
+            <li class="module">NWD161</li>
+            <li class="module">PRS161</li>
+            <li class="module">PRG161</li>
+            <li class="module">PRPR161</li>
+            <li class="module">WPR161</li>
+            <li class="module">STA161</li>
+          </ul>
+
+          <h3>2nd Year Modules</h3>
+          <ul class="moduleList">
+            <li class="module">DBD261</li>
+            <li class="module">ERP261</li>
+            <li class="module">INL261</li>
+            <li class="module">ILE261</li>
+            <li class="module">PMM261</li>
+            <li class="module">
+              Electives (Infrastructure): CNA261, IOT261, OPS261, OPS262,
+              OPS263, SEC261
+            </li>
+            <li class="module">
+              Electives (Software Development): PRG261, PRG262, SWA261, SWT261,
+              SWT262, UXD261, WPR261
+            </li>
+          </ul>
+
+          <h3>3rd Year Modules</h3>
+          <ul class="moduleList">
+            <li class="module">N/A</li>
+          </ul>
+
+          <h3>4th Year Modules</h3>
+          <ul class="moduleList">
+            <li class="module">N/A</li>
+          </ul>
+          <h3>Completed Modules</h3>
+          <ul id="completedModules"></ul>
+          <button id="printButton">Print Completed Modules</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Belgium Campus. All rights reserved.</p>
+    </footer>
+
+    <script src="BackEnd.js"></script>
+    <script src="countdowntimer.js"></script>
+    <script src="interactivefeautures.js"></script>
+  </body>
+</html>
