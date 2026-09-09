@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout Stats</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Workout Statistics</h1>
+      <!-- Navigation links to different sections of the app -->
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="workouts.html">Log Workout</a></li>
+          <li><a href="stats.html">Workout Stats</a></li>
+          <li><a href="goals.html">Fitness Goals</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+          <li><a href="challenge.html">Challenges</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="countdown">00:00:00</div>
+      <section>
+        <h2>Workout Summary</h2>
+        <canvas id="workout-chart"></canvas>
+      </section>
+      <button id="reset-graphs-btn" class="reset-btn">Reset Graphs</button>
+
+    </main>
+    <footer>
+      <p>&copy; 2025 Smart Fitness Tracker</p>
+    </footer>
+    <script src="../js/charts.js"></script>
+    <script src="../js/challenge.js"></script>
+    <script src="../js/favorites.js"></script>
+  </body>
+</html>

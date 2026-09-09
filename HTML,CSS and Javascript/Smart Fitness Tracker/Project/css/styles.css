@@ -1,0 +1,455 @@
+/* General Styles - Apply to the entire page */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+  /* Header styling with background image */
+  header {
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+    background-image: url("../images/Screenshot_20250222_153247_Google.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Navigation Bar Styling */
+nav {
+  background-color: #222; /* Darker background for contrast */
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  background: #ff6b6b; /* Red highlight color */
+  color: white;
+  transform: scale(1.1); /* Slight scaling effect */
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Main Content Section */
+main {
+  padding: 150px;
+  color: black;
+  background-image: url("../images/exercise-4024_512.gif");
+}
+/* Footer Styling */
+footer {
+  background-image: url("../images/Screenshot_20250222_153111_Google.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+/* Input, Select, and Button Styles */
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+/* Button Styles */
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Logged Workouts Section */
+#workout-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#workout-list li {
+  background: #f4f4f4;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+#workout-list li:hover {
+  transform: scale(1.02);
+}
+/* General button styles */
+#workout-list button {
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Style the workout history title and buttons */
+.workout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.workout-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Print All and Delete All Buttons */
+.print-btn, .delete-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Print All - Blue */
+.print-btn {
+  background: #007bff;
+  color: white;
+}
+
+.print-btn:hover {
+  background: #0056b3;
+}
+
+/* Delete All - Red */
+.delete-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #cc0000;
+}
+
+/* Print Button - Green */
+.print-btn {
+  background: #4caf50;
+}
+
+.print-btn:hover {
+  background: #388e3c;
+}
+
+/* Delete Button - Red */
+.delete-btn {
+  background: #ff4d4d;
+}
+
+.delete-btn:hover {
+  background: #cc0000;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.workout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f4f4f4;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.workout:hover {
+  transform: scale(1.05);
+}
+
+.heart {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.heart:hover {
+  color: red;
+}
+
+#favorite-workouts {
+  border: 2px solid #ff6b6b;
+  padding: 15px;
+  border-radius: 10px;
+  background: #ffecec;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Grid container for displaying workouts and achievements */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Creates responsive grid */
+  gap: 15px; /* Space between grid items */
+  padding: 20px; /* Padding around the grid */
+}
+
+/* Duplicate grid-container declaration (originally in CSS) */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Creates responsive grid with larger min size */
+  gap: 15px; /* Space between grid items */
+  padding: 20px; /* Padding around the grid */
+}
+
+/* Styling for individual workout items */
+.workout {
+  display: flex;
+  justify-content: space-between; /* Aligns content to opposite ends */
+  align-items: center; /* Centers content vertically */
+  padding: 15px;
+  border-radius: 10px;
+  background: #f4f4f4; /* Light grey background */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow effect */
+  transition: transform 0.2s; /* Smooth hover effect */
+  cursor: pointer; /* Indicates clickable item */
+}
+
+/* Hover effect for workout items */
+.workout:hover {
+  transform: scale(1.05); /* Slightly enlarges item on hover */
+}
+
+/* Heart icon for favoriting workouts */
+.heart {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.2s; /* Smooth color transition */
+}
+
+.heart:hover {
+  color: red; /* Changes heart color on hover */
+}
+
+/* Styling for favorite workouts section */
+#favorite-workouts {
+  border: 2px solid #ff6b6b; /* Adds red border */
+  padding: 15px;
+  border-radius: 10px;
+  background: #ffecec; /* Light pink background */
+}
+
+/* Header styling for section titles */
+h2 {
+  text-align: center;
+  color: #333; /* Dark grey text */
+}
+
+/* Adjusted grid layout for achievements */
+.achievement {
+  padding: 15px;
+  border-radius: 10px;
+  background: #f4f4f4; /* Light grey background */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  text-align: center; /* Centers text */
+}
+
+/* Styling for completed achievements */
+.achievement.completed {
+  background: #c8e6c9; /* Light green background */
+}
+
+/* Styling for reset achievements button */
+#reset-achievements {
+  display: block;
+  margin: 20px auto; /* Centers button */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff4d4d; /* Red button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#reset-achievements:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Countdown timer styling */
+#countdown {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.7); /* Dark translucent background */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Form container styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between form elements */
+  max-width: 300px;
+  margin: 20px auto; /* Centers form */
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for form inputs */
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button styling */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #4caf50; /* Green button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Styling for reset challenge button */
+#reset-challenge {
+  display: block;
+  margin: 20px auto;
+  background-color: #ff4d4d; /* Red button */
+}
+
+#reset-challenge:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Styling for challenge title */
+#challenge-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Workout Logged Popup */
+.workout-popup {
+  position: fixed;
+  top: 20px; /* Moves to the top */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4caf50; /* Green success color */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.reset-btn {
+  background: #ff4d4d;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.reset-btn:hover {
+  background: #cc0000;
+}

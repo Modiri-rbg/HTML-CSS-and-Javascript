@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Goals</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body id="pages-goals">
+    <header>
+      <h1>Fitness Goals</h1>
+      <!-- Navigation links to different sections of the app -->
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="workouts.html">Log Workout</a></li>
+          <li><a href="stats.html">Workout Stats</a></li>
+          <li><a href="goals.html">Fitness Goals</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+          <li><a href="challenge.html">Challenges</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="countdown">00:00:00</div>
+      <section>
+        <h2>Set a New Goal</h2>
+        <!-- Set a New Goal Section -->
+        <form id="goal-form">
+          <label for="goal-description">Goal Description:</label>
+          <input type="text" id="goal-description" required />
+          <label for="target"
+            >Target (e.g., 10 Kilometres, 4000 calories):</label
+          >
+          <input type="text" id="target" required />
+          <button type="submit">Set Goal</button>
+        </form>
+      </section>
+      <!-- Your Goals Section -->
+      <section>
+        <h2>Your Goals</h2>
+        <ul id="goal-list"></ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Smart Fitness Tracker</p>
+    </footer>
+    <script src="../js/goals.js"></script>
+    <script src="../js/challenge.js"></script>
+  </body>
+</html>
